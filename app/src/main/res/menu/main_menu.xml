@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuScore"
+        android:title="نظرسنجی"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuContact"
+        android:title="تماس با ما"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuAbout"
+        android:title="درباره"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuShare"
+        android:title="اشتراک برنامه" />
+    <item
+        android:id="@+id/menuOther"
+        android:title="دیگر برنامه ها" />
+    <item
+        android:icon="@drawable/ic_baseline_help_outline_24"
+        android:title="راهنما"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/lock_menu"
+                android:title="قفل ها"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/setting_menu"
+                android:title="تنظیمات"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/introduce_menu"
+                android:title="معرفی"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+</menu>

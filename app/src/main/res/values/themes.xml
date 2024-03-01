@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+
+    <style name="Theme.Kids" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/ButtonColor
+        </item>  <!--  رنگ بک گراند Button و Tab انتخاب شده-->
+        <item name="colorOnPrimary">@color/ButtonTextColor</item>
+        <item name="android:textColorSecondary">#673AB7</item>
+
+        <item name="colorPrimaryDark">@color/ButtonTextColor</item>
+
+
+        <item name="android:editTextColor">#9C27B0</item>
+        <item name="android:textColorTertiary">#2196F3</item>
+        <item name="android:textColorPrimaryInverse">#FFC107</item>
+        <item name="android:textColorSecondaryInverse">#00FF0A</item>
+        <item name="android:textColorTertiaryInverse">#FF5722</item>
+        <item name="android:textColor">@color/ButtonTextColor</item> <!-- رنگ متن TextBox -->
+
+
+        <item name="colorButtonNormal">@color/colorAccent</item>
+
+
+    </style>
+
+    <style name="Kids.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Kids.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Kids.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical"
+            android:layout_marginStart="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    app:srcCompat="@drawable/ic_baseline_star_rate_24" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/menuScore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.7"
+                    android:text="نظر سنجی"
+                    android:textSize="14sp"
+                    app:rippleColor="#CDDC39"
+                    android:layout_marginStart="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    app:srcCompat="@android:drawable/ic_menu_call" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/menuContact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.7"
+                    android:text="تماس با ما"
+                    android:textSize="14sp"
+                    app:rippleColor="#FF5722"
+                    android:layout_marginStart="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    app:srcCompat="@android:drawable/ic_menu_share" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/menuShare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.7"
+                    android:text="اشتراک برنامه"
+                    android:textSize="14sp"
+                    app:rippleColor="#FFC107"
+                    android:layout_marginStart="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    app:srcCompat="@drawable/ic_baseline_devices_other_24" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/menuOther"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.7"
+                    android:text="دیگر برنامه ها"
+                    android:textSize="14sp"
+                    app:rippleColor="#4CAF50"
+                    android:layout_marginStart="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    app:srcCompat="@android:drawable/ic_menu_help" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="راهنما"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:rippleColor="#2196F3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    app:srcCompat="@drawable/ic_baseline_lock_24" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lock_menu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="قفل ها"
+                    app:rippleColor="#673AB7" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    app:srcCompat="@drawable/ic_baseline_settings_applications_24" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/setting_menu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="تنظیمات"
+                    app:rippleColor="#E91E63" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    app:srcCompat="@drawable/ic_baseline_new_releases_24" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/introduce_menu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="معرفی"
+                    app:rippleColor="#F44336" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAparat"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    app:icon="@drawable/aparat_logo"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="2dp"
+                    app:iconSize="32dp"
+                    app:iconTintMode="multiply"
+                    app:rippleColor="#4CAF50"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnInstagram"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    app:icon="@drawable/instagram_logo"
+                    app:iconGravity="textEnd"
+                    app:iconPadding="2dp"
+                    app:iconSize="32dp"
+                    app:iconTintMode="multiply"
+                    app:rippleColor="#4CAF50"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="end|center_vertical"
+                    android:hint="ویدیو"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

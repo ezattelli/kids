@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Kids" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="materialButtonStyle">@style/buttonStyle</item>
+        <item name="textInputStyle">@style/textInputStyle</item>
+    </style>
+
+    <style name="buttonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/white</item>
+        <item name="android:textColor">@color/ButtonTextColor</item>
+    </style>
+
+    <style name="textInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:background" tools:targetApi="lollipop">@color/white</item>
+    </style>
+
+    <style name="dialogActivity" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <!--        <item name="background">@drawable/background</item>-->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--        <item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+
+    <style name="MyTransparentTheme" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="background" parent="@style/Theme.MaterialComponents.Dialog">
+        <item name="android:background">@drawable/background_light</item>
+        <!--        <item name="android:background">@android:color/white</item>-->
+    </style>
+
+
+    <style name="SlidingDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_animation_0</item>
+        <item name="android:windowExitAnimation">@anim/slide_down_animation_0</item>
+        <!--        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>-->
+        <!--        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>-->
+    </style>
+
+
+    <!--    <style name="dialog_transparent_style" parent="Theme.MaterialComponents.Light.Dialog">-->
+    <!--        <item name="android:windowBackground">@drawable/dialog_background_transparent</item>-->
+    <!--    </style>-->
+
+
+    <style name="dialog_transparent_style">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+
+    <style name="dialog_transparent_style_float">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="AlertDialog_round_corner">
+        <item name="background">@drawable/dialog_round_corner</item>
+    </style>
+
+    <style name="wallpaper">
+        <item name="android:background">@drawable/wallpaper_lock_light</item>
+    </style>
+
+
+    <style name="BackgroundCardView">
+        <item name="android:backgroundTint">@color/transparent</item>
+    </style>
+
+
+    <style name="BackgroundButton">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+
+    <style name="QuestionButtonBackground">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+
+    <style name="setTimeButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/ButtonTimeColor</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:textColor">@color/ButtonTextColorDime</item>
+    </style>
+
+    <style name="cardViewFragmentBackground">
+        <item name="android:backgroundTint">@color/cardViewBackgroundColorLight</item>
+        <!--        <item name="android:background">@drawable/cardview_fragment_background</item>-->
+    </style>
+
+
+</resources>

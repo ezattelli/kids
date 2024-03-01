@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/wallpaper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.FragmentSetting">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/svParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvActivateSetting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/transparent"
+                android:visibility="visible"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="1dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/laActivateService"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="0.3"
+                            android:background="@color/transparent"
+                            android:backgroundTint="@color/transparent"
+                            android:scaleType="centerCrop"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/play_button_blue"
+                            app:lottie_speed="1" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/tbActive"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="0.3"
+                            android:text="غیر فعال"
+                            android:visibility="gone"
+                            android:layout_marginStart="10dp" />
+
+                        <TextView
+                            android:id="@+id/tvLockStatus"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20dp"
+                            android:text="محافظ "
+                            android:textSize="18sp"
+                            android:paddingEnd="20dp" />
+
+                        <ImageView
+                            android:id="@+id/ivLockActiveIcon"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_app_blocking_24"
+                            tools:ignore="UseAppTint" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnActivateHelp"
+                            style="@style/BackgroundButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llLockCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="جهت فعال شدن برنامه دسترسی های زیر را فعال کنید."
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvUssage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ردیابی برنامه ها" />
+
+                        <TextView
+                            android:id="@+id/tvAdmin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="افزودن به لیست سرپرست" />
+
+                        <TextView
+                            android:id="@+id/tvUpToTop"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="بالا آوردن برنامه" />
+
+                        <TextView
+                            android:id="@+id/tvBatteryOptimize"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="بهینه سازی باطری غیر فعال شود، در برخی از نسخه های اندروید قابل تغییر نیست." />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/llAccessSettings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/transparent"
+                    android:visibility="gone"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="1dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivAccessSettings"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_baseline_navigate_before_24" />
+
+                        <TextView
+                            android:id="@+id/tvExpandAccessSetting"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="20dp"
+                            android:paddingRight="20dp"
+                            android:text="دسترسی های مورد نیاز"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/ivAccessSettingsIcon"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_app_settings_alt_24"
+                            android:visibility="gone" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/laAccessSetting"
+                            android:layout_width="0dp"
+                            android:layout_height="68dp"
+                            android:layout_weight="0.2"
+                            android:scaleType="fitCenter"
+                            app:lottie_autoPlay="true"
+                            app:lottie_rawRes="@raw/phone_settings_lottie_animation"
+                            app:lottie_speed="2" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnAccessHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/epAccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_duration="1000"
+                    app:el_expanded="true">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/transparent"
+                        android:visibility="visible"
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="1dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/llAccessExpandText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/btnUsage"
+                                        style="@style/BackgroundButton"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.3"
+                                        android:text="غیر فعال"
+                                        android:textAllCaps="false"
+                                        app:rippleColor="#4CAF50" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.6"
+                                        android:gravity="center_vertical"
+                                        android:text="ردیابی برنامه ها"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="48dp"
+                                        android:layout_weight="0.1"
+                                        android:src="@drawable/ic_baseline_perm_device_information_24" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/txtAccessExpandText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="textMultiLine"
+                                    android:padding="5dp"
+                                    android:text="جهت تشخیص فعال و غیر فعال شدن نرم افزارهای نصب شده روی گوشی به این دسترسی نیاز می باشد. این مجوز برای گوشی های با اندروید 5 و بالاتر مورد نیاز است."
+                                    android:visibility="visible" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_margin="10dp"
+                                    android:background="@android:color/darker_gray" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/llAdminExpandText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/btnAdmin"
+                                        style="@style/BackgroundButton"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.3"
+                                        android:text="غیر فعال"
+                                        android:textAllCaps="false"
+                                        app:rippleColor="#4CAF50" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.6"
+                                        android:gravity="center_vertical"
+                                        android:text="افزودن به لیست سرپرست"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="48dp"
+                                        android:layout_weight="0.1"
+                                        android:src="@drawable/ic_baseline_admin_panel_settings_24" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/txtAdminExpandText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=" جلوگیری از حذف برنامه" />
+
+                                <View
+                                    android:id="@+id/view2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_margin="10dp"
+                                    android:background="@android:color/darker_gray" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/llBringToFrontExpandText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/btnBringToTop"
+                                        style="@style/BackgroundButton"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.3"
+                                        android:text="غیر فعال"
+                                        android:textAllCaps="false"
+                                        android:visibility="visible"
+                                        app:rippleColor="#4CAF50" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.7"
+                                        android:gravity="center_vertical"
+                                        android:text="بالا آوردن برنامه"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="48dp"
+                                        android:layout_weight="0.1"
+                                        android:src="@drawable/ic_baseline_flip_to_front_24" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/txtBringToFrontExpandText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="پس از پایان زمان مجاز استفاده برنامه را جهت پیشنهاد جدید و یا اعلان زمان به بالای برنامه های دیگر می آورد این مجور در اندروید  11 مورد نیاز میباشد. \n  در دستگاه های شیائومی گزینه های Display pop-up window و Display pop-up window while running in the background  را فعال کنید." />
+
+                                <View
+                                    android:id="@+id/view4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_margin="10dp"
+                                    android:background="@android:color/darker_gray" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <LinearLayout
+                                    android:id="@+id/llTurnOffExpandText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/btnTurnOffBatteryOptimize"
+                                        style="@style/BackgroundButton"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.3"
+                                        android:text="غیر فعال"
+                                        app:rippleColor="#4CAF50" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.7"
+                                        android:gravity="center_vertical"
+                                        android:text="بهینه سازی باطری غیر فعال شود"
+                                        android:textColor="#616161"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView11"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_weight="0.1"
+                                        android:src="@drawable/ic_baseline_battery_charging_full_24" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/txtBatteryOptimizeExpandText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="بهینه سازی مصرف باطری را غیر فعال کنید" />
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_margin="10dp"
+                                    android:background="@android:color/darker_gray" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/llLockScreenExpandText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <com.google.android.material.button.MaterialButton
+                                        android:id="@+id/btnLockScreen"
+                                        style="@style/BackgroundButton"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.3"
+                                        android:text="اجرا"
+                                        android:textAllCaps="false"
+                                        app:rippleColor="#4CAF50" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.7"
+                                        android:gravity="center_vertical"
+                                        android:text="فعال کردن قفل صفحه"
+                                        android:textSize="18sp" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView10"
+                                        android:layout_width="0dp"
+                                        android:layout_height="48dp"
+                                        android:layout_weight="0.1"
+                                        android:src="@drawable/ic_baseline_screen_lock_portrait_24" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/txtLockScreenExpandText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="" />
+
+                                <View
+                                    android:id="@+id/view3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_margin="10dp"
+                                    android:background="@android:color/darker_gray"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLoginSettings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvExpandParentPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    app:cardCornerRadius="0dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivLoginSettings"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_baseline_navigate_before_24" />
+
+                        <TextView
+                            android:id="@+id/tvExpandParentPassword"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.8"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="20dp"
+                            android:paddingRight="20dp"
+                            android:text="تنظیمات ورود به برنامه"
+                            android:textSize="16sp" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/laLogin"
+                            android:layout_width="0dp"
+                            android:layout_height="68dp"
+                            android:layout_weight="0.2"
+                            android:scaleType="fitCenter"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="false"
+                            app:lottie_rawRes="@raw/unlock_sky_theme"
+                            app:lottie_speed="2" />
+
+                        <ImageView
+                            android:id="@+id/ivLoginSettingsIcon"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_login_24"
+                            android:visibility="gone" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnParentLoginHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/epParentLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_duration="1000"
+                    app:el_expanded="false">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/transparent"
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="1dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.7"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnParentPassSave"
+                                    style="@style/BackgroundButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginEnd="6dp"
+                                    android:layout_marginRight="6dp"
+                                    android:layout_weight="0.3"
+                                    android:text="ذخیره"
+                                    app:backgroundTint="#FF5722"
+                                    app:elevation="5dp"
+                                    app:rippleColor="#4CAF50" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:layout_weight="0.7"
+                                    android:background="@color/transparent">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edtParentPass"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:imeOptions="flagForceAscii"
+                                        android:inputType="textVisiblePassword"
+                                        tools:ignore="SpeakableTextPresentCheck" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view9"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="0.7"
+                                android:background="@android:color/darker_gray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.7"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnPatternLockSetting"
+                                    style="@style/BackgroundButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginEnd="6dp"
+                                    android:layout_marginRight="6dp"
+                                    android:layout_weight="0.3"
+                                    android:text="تنظیم"
+                                    app:backgroundTint="#FFC107"
+                                    app:elevation="1dp"
+                                    app:rippleColor="#4CAF50" />
+
+                                <TextView
+                                    android:id="@+id/tvPatternLock"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.7"
+
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:hint="تنظیم الگو"
+                                    android:inputType="textEmailAddress" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view8"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="0.7"
+                                android:background="@android:color/darker_gray" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="58dp"
+                                android:layout_weight="0.7"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnParentEmailSave"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginEnd="6dp"
+                                    android:layout_marginRight="6dp"
+                                    android:layout_weight="0.3"
+                                    android:text="ذخیره"
+                                    app:elevation="5dp"
+                                    app:rippleColor="#4CAF50" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:layout_weight="0.7">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edtParentEmail"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.7"
+                                        android:hint="ایمیل (اختیاری)"
+
+                                        android:inputType="textEmailAddress" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view7"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="0.7"
+                                android:background="@android:color/darker_gray"
+                                android:visibility="gone" />
+
+
+                            <LinearLayout
+                                android:id="@+id/llPhoneNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="58dp"
+                                android:layout_weight="0.7"
+                                android:clickable="false"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnParentPhoneNumberSave"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="6dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginEnd="6dp"
+                                    android:layout_marginRight="6dp"
+                                    android:layout_weight="0.3"
+                                    android:text="ذخیره"
+                                    app:elevation="5dp"
+                                    app:rippleColor="#4CAF50" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:layout_weight="0.7">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edtParentPhoneNumber"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.7"
+                                        android:hint="شماره همراه (اختیاری)"
+                                        android:inputType="phone" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@android:color/darker_gray"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llGeneralSettings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/transparent"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="1dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivGeneralSettings"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.1"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_baseline_navigate_before_24" />
+
+                        <TextView
+                            android:id="@+id/tvExpandGeneralSetting"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="20dp"
+                            android:paddingRight="20dp"
+                            android:text="تنظیمات عمومی"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/ivGeneralSettingsIcon"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0.1"
+                            android:clickable="false"
+                            android:src="@drawable/ic_baseline_settings_applications_24"
+                            android:visibility="gone" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/laGeneralSettings"
+                            android:layout_width="0dp"
+                            android:layout_height="68dp"
+                            android:layout_weight="0.2"
+                            android:scaleType="fitCenter"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="false"
+                            app:lottie_rawRes="@raw/setting_icon_animation"
+                            app:lottie_speed="2" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnGeneralSettingHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/epGeneralSetting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_duration="1000"
+                    app:el_expanded="false">
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/BackgroundCardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="0dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnDarkTheme"
+                                    style="@style/BackgroundButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:text="تیره" />
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnLightTheme"
+                                    style="@style/BackgroundButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_weight="0.2"
+                                    android:text="روشن" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.5"
+                                    android:gravity="center_vertical"
+                                    android:paddingEnd="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="قالب"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:id="@+id/imageView12"
+                                    android:layout_width="0dp"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="0.1"
+                                    android:src="@drawable/ic_baseline_color_lens_24" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view6"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@android:color/darker_gray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnPopUpTime"
+                                    style="@style/BackgroundButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:text="ذخیره" />
+
+                                <EditText
+                                    android:id="@+id/edtPopupTime"
+                                    android:layout_width="0dp"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="0.2"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:hint="1 ثانیه"
+                                    android:inputType="number" />
+
+                                <ImageView
+                                    android:id="@+id/ivPopupTimeSaved"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:layout_weight="0.1"
+                                    android:src="@drawable/ic_baseline_check_24"
+                                    android:visibility="invisible" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4"
+                                    android:gravity="center|end"
+                                    android:paddingEnd="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="زمان بالا آمدن برنامه" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="0.1"
+                                    android:src="@drawable/ic_baseline_flip_to_front_24" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@android:color/darker_gray" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnLockAllProgram"
+                                    style="@style/BackgroundButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.2"
+                                    android:text="قفل" />
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnFreeAllProgram"
+                                    style="@style/BackgroundButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="2dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_weight="0.2"
+                                    android:text="آزاد" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.5"
+                                    android:gravity="center|end"
+                                    android:paddingEnd="10dp"
+                                    android:paddingRight="10dp"
+                                    android:text="همه برنامه ها :"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:id="@+id/imageView15"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.1"
+                                    android:src="@drawable/ic_baseline_lock_open_24" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@android:color/darker_gray" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clickable="false"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/rgAppHelp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.9"
+                                    android:checkedButton="@id/rbShowHelp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingEnd="10dp"
+                                    android:paddingRight="10dp">
+
+                                    <RadioButton
+                                        android:id="@+id/rbHiddenHelp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="48dp"
+                                        android:layout_weight="0.25"
+                                        android:gravity="start|center_vertical"
+                                        android:text="مخفی" />
+
+                                    <RadioButton
+                                        android:id="@+id/rbShowHelp"
+                                        android:layout_width="0dp"
+                                        android:layout_height="48dp"
+                                        android:layout_weight="0.25"
+                                        android:gravity="start|center_vertical"
+                                        android:text="نمایش" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center_vertical"
+                                        android:text="راهنمای میان برنامه : "
+                                        android:textSize="16sp" />
+                                </RadioGroup>
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="0.1"
+                                    app:srcCompat="@android:drawable/ic_menu_help" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@android:color/darker_gray"
+                                android:clickable="false" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clickable="false"
+                                android:orientation="horizontal">
+
+                                <RadioGroup
+                                    android:id="@+id/rgNewAppLock"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.9"
+                                    android:checkedButton="@id/rbNewLock"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingEnd="10dp"
+                                    android:paddingRight="10dp">
+
+                                    <RadioButton
+                                        android:id="@+id/rbNewLock"
+                                        android:layout_width="0dp"
+                                        android:layout_height="48dp"
+                                        android:layout_weight="0.25"
+                                        android:gravity="start|center_vertical"
+                                        android:text="قفل" />
+
+                                    <RadioButton
+                                        android:id="@+id/rbNewFree"
+                                        android:layout_width="0dp"
+                                        android:layout_height="48dp"
+                                        android:layout_weight="0.25"
+                                        android:gravity="start|center_vertical"
+                                        android:text="آزاد" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:gravity="center_vertical"
+                                        android:text="برنامه های جدید : "
+                                        android:textSize="16sp" />
+                                </RadioGroup>
+
+                                <ImageView
+                                    android:id="@+id/imageView16"
+                                    android:layout_width="0dp"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="0.1"
+                                    android:src="@drawable/ic_baseline_fiber_new_24" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

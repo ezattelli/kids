@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Kids</string>
+    <string name="admin_receiver_status_enabled">سرپرست فعال شد</string>
+    <string name="admin_receiver_status_disable_warning">اخطار اقدام به حذف برنامه</string>
+    <string name="admin_receiver_status_disabled">سرپرست غیر فعال شد</string>
+    <string name="admin_receiver_status_pw_changed">اقدام جهت تغییر رمز ورود</string>
+    <string name="sample_device_admin">محافظ کودک</string>
+    <string name="sample_device_admin_description">دسترسی سرپرستی به برنامه جهت جلوگیری از حذف برنامه</string>
+    <string name="profile_name">AppRestrictionEnforcer </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="whatsapp_suffix">whatsapp</string>
+    <string name="PhonSettingLoackHelp">با فعال کردن این گزینه دسترسی به تنظیمات دستگاه محدود شده و کاربر نمیتواند برنامه را از حالت سرپرست خارج کرده و حذف کند</string>
+    <string name="SettingHelpTitle">تنظیمات</string>
+    <string name="CameraHelpTitle">فقط دوربین</string>
+    <string name="CameraHelp">با فعال شدن دوربین صفحه دستگاه خاموش میشود</string>
+    <string name="PhoneLockScreenHelpTitle">صفحه نمایش خاموش</string>
+    <string name="PhoneLockScreenHelp">با فعال شدن این گزینه پس از برقراری شروط تنظیم شده در قسمت قفل ها صفحه گوشی خاموش میشود</string>
+    <string name="PhoneAllLockTitle">قفل کامل</string>
+    <string name="PhoneAllLock">با فعال شدن این آیتم زمان بندی بر روی برنامه های سیستمی و نصب شده و همچنین روشن بودن صفحه نمایش اعمال میشود</string>
+    <string name="PhoneAuthTimeHelpTitle">مدت زمان مجاز</string>
+    <string name="PhoneAuthTimeHelp">مدت مجاز استفاده از دستگاه را مشخص میکند برای مثال از 6 صبح الی 12 ظهر فقط 2 ساعت</string>
+    <string name="PhoneEndTimeHelpTitle">مجاز تا ساعت</string>
+    <string name="PhoneEndTimeHelp">پایان ساعت مجاز استفاده از دستگاه را مشخص میکند</string>
+    <string name="PhoneStartTimeHelpTitle">مجاز از ساعت</string>
+    <string name="PhoneStartTimeHelp">ساعتی که دستگاه برای استفاده مجاز میشود را مشخص میکند</string>
+    <string name="PhoneLockHelpTitle">قفل دستگاه</string>
+    <string name="PhoneLockHelp">این قست از تنظیمات بر کلیه برنامه های سیستمی و نصب شده اعمال میشوند</string>
+    <string name="GeneralSettingHelpTitle">تنظیمات عمومی</string>
+    <string name="GeneralSettingHelp">تنظیمات عمومی برنامه در این قسمت انجام می شود</string>
+    <string name="AccessHelpTitle">دسترسی های ضروری</string>
+    <string name="AccessHelp">این قسمت برای فعال شدن دسترسی های ضروری جهت فعال شدن قفل می باشد</string>
+    <string name="ParentLoginHelpTitle">رمز ورود</string>
+    <string name="ParentLoginHelp">این قسمت برای تنظیم رمز و الگوی ورود جهت محدود کردن دسترسی به تنظیمات برنامه می باشد.  در صورت تخصیص دادن رمز یا الگو زمان اجرای برنامه فقط آیتم فرزند نشان داده خواهد شد و برای دسترسی به قسمت های دیگر ورود رمز یا الگو ضروری است.لطفا در حفظ و نگهداری رمز دقت کنید</string>
+    <string name="ActivateHelpTitle">فعال سازی</string>
+    <string name="ActivateHelp">در صورت سبز بودن آیتم های دسترسی با فشردن دکمه فعال برنامه قفل فعال شده و تنظیمات ایجاد شده در قسمت قفل ها به برنامه و دستگاه اعمال می شود. </string>
+    <string name="showAppLockHelpTitle">قفل برنامه ها</string>
+    <string name="showAppLockHelp">در این قسمت میتوانید زمان شروع قفل شدن برنامه و همچنین مدت زمان قفل بودن هر یک از برنامه ها را مشخص کنید. در صورتی که هیچ زمانی انتخاب نکنید برنامه به صورت دائمی قفل میشود و در منوی فرزند نیز نشان داده نخواهد شد.</string>
+    <string name="title_activity_reset_used_time">ActivityResetUsedTime</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_main333">MainActivity333</string>
+    <string name="title_activity_main3333">MainActivity3333</string>
+
+</resources>

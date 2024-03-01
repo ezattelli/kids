@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Kids" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="materialButtonStyle">@style/buttonStyle</item>
+        <!--        <item name="textInputStyle">@style/textInputStyle</item>-->
+    </style>
+
+    <style name="buttonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/ButtonTextColor</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="textInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:background" tools:targetApi="lollipop">@color/ButtonTextColor</item>
+    </style>
+
+
+    <style name="background" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:background">@drawable/background_dark</item>
+        <!--        <item name="android:background">@color/ButtonTextColor</item>-->
+    </style>
+
+
+    <style name="SlidingDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_animation</item>
+        <item name="android:windowExitAnimation">@anim/slide_down_animation</item>
+    </style>
+
+
+    <style name="wallpaper">
+        <item name="android:background">@drawable/wallpaper_lock_dark</item>
+    </style>
+
+
+    <style name="BackgroundCardView">
+        <item name="android:backgroundTint">@color/transparent</item>
+    </style>
+
+
+    <style name="BackgroundButton">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+
+    <style name="QuestionButtonBackground">
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="dialog_transparent_style">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="dialog_transparent_style_float">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+    <style name="setTimeButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/ButtonTextColor</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:textColor">@color/ButtonTextColorDime</item>
+    </style>
+
+    <style name="cardViewFragmentBackground">
+        <item name="android:backgroundTint">@color/CardViewBackGroundColorDark</item>
+        <!--        <item name="android:background">@drawable/cardview_fragment_background</item>-->
+    </style>
+
+
+</resources>

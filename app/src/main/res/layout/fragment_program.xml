@@ -1,0 +1,1356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/wallpaper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Fragment.FragmentProgram">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_collapseMode="parallax">
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardViewFragmentBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivPhoneLockSettings"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0.1"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_baseline_navigate_before_24"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvExpandLockPhoneSetting"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1dp"
+                            android:layout_weight="0.9"
+                            android:gravity="right|center_vertical"
+                            android:paddingEnd="20dp"
+                            android:paddingRight="20dp"
+                            android:text="قفل دستگاه"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/ivPhoneLockSettingsIcon"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0.1"
+                            android:clickable="false"
+                            android:src="@drawable/ic_baseline_phone_locked_24"
+                            android:visibility="gone" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/lottieAnimationView"
+                            android:layout_width="0dp"
+                            android:layout_height="68dp"
+                            android:layout_weight="0.2"
+                            android:background="@color/transparent"
+                            android:backgroundTint="@color/transparent"
+                            android:scaleType="fitCenter"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/mobile_locked_incoming_call"
+                            app:lottie_speed="2" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneLockHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.6"
+                            android:paddingTop="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="با روشن شدن صفحه نمایش زمان محاسبه می شود. \n توجه : جهت فعال شدن سرویس برنامه باید فعال باشد"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:visibility="visible">
+
+                            <ImageView
+                                android:id="@+id/iv2LockAll"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2"
+                                android:src="@drawable/ic_baseline_phonelink_lock_24" />
+
+                            <ImageView
+                                android:id="@+id/ivLockAll"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.12"
+                                android:src="@drawable/ic_baseline_lock_open_24" />
+
+                            <TextView
+                                android:id="@+id/tvLockAll"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="0.9"
+                                android:gravity="center_vertical"
+                                android:text="قفل دستگاه فعال شود"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/mbtnPhoneAllLockHelp"
+                                style="@style/QuestionButtonBackground"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.1"
+                                android:gravity="center|clip_vertical|start"
+                                app:icon="@android:drawable/ic_menu_help"
+                                app:iconGravity="textEnd"
+                                app:iconPadding="0dp"
+                                app:iconTintMode="multiply"
+                                app:rippleColor="#8BC34A"
+                                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/iv2LockScreen"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2"
+                                android:src="@drawable/ic_baseline_display_settings_24" />
+
+                            <ImageView
+                                android:id="@+id/ivLockScreen"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.12"
+                                android:src="@drawable/ic_baseline_lock_open_24" />
+
+                            <TextView
+                                android:id="@+id/tvLockScreen"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="0.9"
+                                android:gravity="center_vertical"
+                                android:text="با فعال شدن قفل صفحه نمایش خاموش شود"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/mbtnPhoneLockScreenHelp"
+                                style="@style/QuestionButtonBackground"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.1"
+                                android:gravity="center|clip_vertical|start"
+                                app:icon="@android:drawable/ic_menu_help"
+                                app:iconGravity="textEnd"
+                                app:iconPadding="0dp"
+                                app:iconTintMode="multiply"
+                                app:rippleColor="#8BC34A"
+                                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view10"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/tvStartPhone"
+                            style="@style/setTimeButtonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0.4"
+                            android:clickable="false"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="تنظیم نشده"
+                            app:rippleColor="#8BC34A" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="10dp"
+                            android:paddingRight="10dp"
+                            android:text=" مجاز از ساعت :" />
+
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/ic_baseline_av_timer_24"
+                            android:visibility="gone" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneStartTimeHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/tvEndPhone"
+                            style="@style/setTimeButtonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0.4"
+                            android:clickable="false"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="تنظیم نشده"
+                            app:rippleColor="#8BC34A" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="10dp"
+                            android:paddingRight="10dp"
+                            android:text=" مجاز تا ساعت :" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneEndTimeHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/tvAuthPhone"
+                            style="@style/setTimeButtonStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0.4"
+                            android:clickable="false"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="تنظیم نشده"
+                            app:rippleColor="#8BC34A" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="10dp"
+                            android:paddingRight="10dp"
+                            android:text="مدت زمان مجاز  :" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneAuthTimeHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvUsedTimePhone"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0.4"
+                            android:clickable="false"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="تنظیم نشده" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="10dp"
+                            android:paddingRight="10dp"
+                            android:text=" زمان استفاده شده :" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneUsedTimeHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnResetPhoneLockTime"
+                        style="@style/setTimeButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ریست"
+                        android:textSize="12sp"
+                        app:iconPadding="0dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardViewFragmentBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="25dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivPermanentLock"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0.1"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_baseline_navigate_before_24"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvExpandPermanentLock"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1dp"
+                            android:layout_weight="0.9"
+                            android:gravity="right|center_vertical"
+                            android:paddingEnd="20dp"
+                            android:paddingRight="20dp"
+                            android:text="قفل های دائمی"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/ivPermanentLockIcon"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0.1"
+                            android:clickable="false"
+                            android:src="@drawable/ic_baseline_phone_locked_24"
+                            android:visibility="gone" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/lottieAnimationViewPermanentLock"
+                            android:layout_width="0dp"
+                            android:layout_height="68dp"
+                            android:layout_weight="0.2"
+                            android:background="@color/transparent"
+                            android:backgroundTint="@color/transparent"
+                            android:scaleType="fitCenter"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/lock_blue"
+                            app:lottie_speed="2" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPermanentLockHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.6"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="هیچ گونه زمانبندی بر روی این موارد اعمال نمی شود و با فعال شدن سرویس برنامه به صورت دائمی قفل ها فعال میشوند."
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/iv2LockSettings"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/ic_baseline_settings_applications_24" />
+
+                        <ImageView
+                            android:id="@+id/ivLockSettings"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="0.12"
+                            android:src="@drawable/ic_baseline_lock_open_24" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/laLockSettings"
+                            android:layout_width="36dp"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            app:lottie_autoPlay="true"
+                            app:lottie_rawRes="@raw/lock_animation"
+                            app:lottie_repeatCount="-1" />
+
+                        <TextView
+                            android:id="@+id/tvLockSettings"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:text="تنظیمات"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneSettingLockHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@color/transparent"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv2LockCall"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/ic_baseline_call_24" />
+
+                        <ImageView
+                            android:id="@+id/ivLockCall"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="0.12"
+                            android:src="@drawable/ic_baseline_lock_open_24" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/laLockCall"
+                            android:layout_width="36dp"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            app:lottie_autoPlay="true"
+                            app:lottie_rawRes="@raw/lock_animation"
+                            app:lottie_repeatCount="-1" />
+
+                        <TextView
+                            android:id="@+id/tvLockCall"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:text="تماس"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneCallLockHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@color/transparent"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv2LockMessaging"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/ic_baseline_message_24" />
+
+                        <ImageView
+                            android:id="@+id/ivLockMessaging"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="0.12"
+                            android:src="@drawable/ic_baseline_lock_open_24" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/laLockMessaging"
+                            android:layout_width="36dp"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            app:lottie_autoPlay="true"
+                            app:lottie_rawRes="@raw/lock_animation"
+                            app:lottie_repeatCount="-1" />
+
+                        <TextView
+                            android:id="@+id/tvLockMessaging"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:text="پیام"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneMessagingLockHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@color/transparent"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/iv2LockGallery"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/ic_baseline_photo_library_24" />
+
+                        <ImageView
+                            android:id="@+id/ivLockGallery"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="0.12"
+                            android:src="@drawable/ic_baseline_lock_open_24" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/laLockGallery"
+                            android:layout_width="36dp"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            app:lottie_autoPlay="true"
+                            app:lottie_rawRes="@raw/lock_animation"
+                            app:lottie_repeatCount="-1" />
+
+                        <TextView
+                            android:id="@+id/tvLockGallery"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:text="گالری"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneGalleryLockHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@color/transparent"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/iv2LockFolder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/ic_baseline_folder_24" />
+
+                        <ImageView
+                            android:id="@+id/ivLockFolder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="0.12"
+                            android:src="@drawable/ic_baseline_lock_open_24" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/laLockFolder"
+                            android:layout_width="36dp"
+                            android:layout_height="match_parent"
+                            android:visibility="gone"
+                            app:lottie_autoPlay="true"
+                            app:lottie_rawRes="@raw/lock_animation"
+                            app:lottie_repeatCount="-1" />
+
+                        <TextView
+                            android:id="@+id/tvLockFolder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:text="فایلها"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneFolderLockHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@color/transparent"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv2LockCamera"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/ic_baseline_photo_camera_24" />
+
+                        <ImageView
+                            android:id="@+id/ivLockCamera"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="0.12"
+                            android:src="@drawable/ic_baseline_lock_open_24" />
+
+                        <TextView
+                            android:id="@+id/tvLockCamera"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:text="دوربین"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneCameraLockHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv2LockGooglePlay"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            app:srcCompat="@drawable/google_play_store" />
+
+                        <ImageView
+                            android:id="@+id/ivLockGooglePlay"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="0.12"
+                            android:src="@drawable/ic_baseline_lock_open_24" />
+
+                        <TextView
+                            android:id="@+id/tvLockGooglePlay"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:text="گوگل پلی"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneGooglePlayLockHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@color/transparent"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv2LockFaceBook"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            app:srcCompat="@drawable/facebook" />
+
+                        <ImageView
+                            android:id="@+id/ivLockFaceBook"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="0.12"
+                            android:src="@drawable/ic_baseline_lock_open_24" />
+
+                        <TextView
+                            android:id="@+id/tvLockFaceBook"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:text="فیس بوک"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneFaceBookLockHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@color/transparent"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv2LockChrome"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            app:srcCompat="@drawable/google_chrom" />
+
+                        <ImageView
+                            android:id="@+id/ivLockChrome"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="0.12"
+                            android:src="@drawable/ic_baseline_lock_open_24" />
+
+                        <TextView
+                            android:id="@+id/tvLockChrome"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:text="مرورگر کروم"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneChromeLockHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@color/transparent"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv2LockGmail"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            app:srcCompat="@drawable/gmail" />
+
+                        <ImageView
+                            android:id="@+id/ivLockGmail"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="0.12"
+                            android:src="@drawable/ic_baseline_lock_open_24" />
+
+                        <TextView
+                            android:id="@+id/tvLockGmail"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:text="جی میل"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneGmailLockHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@color/transparent"
+                            android:gravity="center|clip_vertical|start"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv2LockBazaar"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            app:srcCompat="@drawable/bazaar" />
+
+                        <ImageView
+                            android:id="@+id/ivLockBazaar"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="0.12"
+                            android:src="@drawable/ic_baseline_lock_open_24" />
+
+                        <TextView
+                            android:id="@+id/tvLockBazaar"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:text="کافه بازار"
+                            android:textSize="16sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnPhoneBazaarLockHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:background="@color/transparent"
+                            android:gravity="center|clip_vertical|start"
+                            android:visibility="visible"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+                </ScrollView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/cardViewFragmentBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivProgramLockSettings"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0.1"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_baseline_navigate_before_24"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvExpandLockProgramSetting"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="1dp"
+                            android:layout_weight="0.9"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="20dp"
+                            android:paddingRight="20dp"
+                            android:text="برنامه های نصب شده"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/ivProgramLockSettingsIcon"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0.1"
+                            android:clickable="false"
+                            android:src="@drawable/ic_baseline_apps_24"
+                            android:visibility="gone" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/lottieAnimationView2"
+                            android:layout_width="0dp"
+                            android:layout_height="68dp"
+                            android:layout_weight="0.3"
+                            android:background="@color/transparent"
+                            android:backgroundTint="@color/transparent"
+                            android:scaleType="fitCenter"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/mobile_application"
+                            app:lottie_speed="1" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/mbtnAppLockHelp"
+                            style="@style/QuestionButtonBackground"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.1"
+                            android:gravity="center|clip_vertical|start"
+                            android:visibility="visible"
+                            app:icon="@android:drawable/ic_menu_help"
+                            app:iconGravity="textEnd"
+                            app:iconPadding="0dp"
+                            app:iconTintMode="multiply"
+                            app:rippleColor="#8BC34A"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:visibility="visible"
+                        app:cardCornerRadius="0dp"
+                        app:cardElevation="1dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/edtSearchProgram"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_baseline_search_24"
+                                android:drawableLeft="@drawable/ic_baseline_search_24"
+                                android:ems="10"
+                                android:hint="جستجوی برنامه"
+                                android:inputType="textPersonName"
+                                android:minHeight="48dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="زمان های تنظیم شده پس از فعال شدن محافظ بر روی برنامه ها اعمال می شوند."
+                                android:inputType="textMultiLine"
+                                android:minHeight="48dp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/transparent"
+                        app:cardElevation="1dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.tabs.TabLayout
+                                android:id="@+id/tblFilterP"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:background="@color/transparent">
+
+                                <com.google.android.material.tabs.TabItem
+                                    android:id="@+id/tblAllProgrmFilterP"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="همه" />
+
+                                <com.google.android.material.tabs.TabItem
+                                    android:id="@+id/tblLockedFilterP"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="قفل" />
+
+                                <com.google.android.material.tabs.TabItem
+                                    android:id="@+id/tblFreeFilterP"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="آزاد" />
+
+                                <com.google.android.material.tabs.TabItem
+                                    android:id="@+id/tblUsedTimeP"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="زمان " />
+                            </com.google.android.material.tabs.TabLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvProgramCountP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_weight="0.1"
+                                    android:gravity="center"
+                                    android:hint="999"
+                                    android:paddingStart="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:textSize="12sp" />
+
+                                <ImageView
+                                    android:id="@+id/ivSortP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center_horizontal|center_vertical"
+                                    android:layout_weight="0.1"
+                                    android:padding="0dp"
+                                    app:srcCompat="@drawable/sort_desc" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/transparent"
+                        app:cardElevation="0dp"
+                        app:cardPreventCornerOverlap="true">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvAppListP"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@android:color/transparent"
+                            android:backgroundTint="@android:color/transparent" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

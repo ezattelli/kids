@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--   color for the app bar and other primary UI elements -->
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorOnPrimary">#353535</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimaryNight">#4C4C4C</color>
+    <color name="colorPrimaryDarkNight">#323232</color>
+    <color name="colorOnPrimaryNight">#3A2929</color>
+    <color name="colorAccentNight">#450018</color>
+
+
+    <color name="colorSecondary">#FFFFFF</color>
+
+
+    <color name="ButtonColor">#FFFFFF</color>
+    <color name="ButtonTextColor">#4B4B4B</color>
+    <color name="ButtonTextColorDime">#878686</color>
+    <color name="ButtonTimeColor">#DDDDDD</color>
+
+    <color name="CardViewBackGroundColorDark">#131313</color>
+    <color name="cardViewBackgroundColorLight">#EBEBEB</color>
+
+
+    <color name="blue">#0000ff</color>
+
+    <color name="button_text_green">#00974E</color>
+    <color name="button_text_red">#D60000</color>
+
+    <!--Other surface colors and red for error color-->
+    <color name="black">#3E2626</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#B00020</color>
+
+    <color name="help_lock_icon">#AA810000</color>
+    <color name="help_loginicon">#AA1E6021</color>
+    <color name="help_access_icon">#AA3F51B5</color>
+    <color name="help_general_icon">#AA9F4B30</color>
+
+    <color name="help_sort_icon">#AA00988A</color>
+    <color name="help_search_icon">#AAD6A100</color>
+
+    <color name="transparent">#00FF0000</color>
+</resources>

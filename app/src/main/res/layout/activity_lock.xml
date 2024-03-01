@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:lockview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bg">
+
+
+    <TextView
+        android:id="@+id/tvPatternDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pattern"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="برای باز شدن برنامه الگو را رسم کنید."
+        android:textColor="#fff"
+        android:textSize="22sp"
+        lockview:layout_constraintEnd_toEndOf="parent"
+        lockview:layout_constraintStart_toStartOf="parent"
+        lockview:layout_constraintTop_toTopOf="parent" />
+
+
+    <ir.etelli.kids.Pattern.MaterialLockView
+        android:id="@+id/pattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        lockview:CORRECT_COLOR="#00ff00"
+        lockview:LOCK_COLOR="#fff"
+        lockview:WRONG_COLOR="#ff0000"
+        lockview:layout_constraintBottom_toTopOf="@+id/btnPatternLock"
+        lockview:layout_constraintEnd_toEndOf="parent"
+        lockview:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnPatternLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:text="تایید"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp"
+        lockview:layout_constraintBottom_toBottomOf="parent"
+        lockview:layout_constraintEnd_toEndOf="parent"
+        lockview:layout_constraintHorizontal_bias="1.0"
+        lockview:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
